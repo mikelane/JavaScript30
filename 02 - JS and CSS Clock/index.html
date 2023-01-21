@@ -98,6 +98,25 @@
       minutes: now.getMinutes(),
       hours: now.getHours(),
     };
+
+    if (seconds === 0) {
+      secondHand.style.transition = 'none';
+    } else {
+      secondHand.style.transition = '';
+    }
+
+    if (minutes === 0 && seconds === 0) {
+      minuteHand.style.transition = 'none';
+    } else {
+      minuteHand.style.transition = '';
+    }
+
+    if (hours === 0 && minutes === 0 && seconds === 0) {
+      hourHand.style.transition = 'none';
+    } else {
+      hourHand.style.transition = '';
+    }
+
     const secondsDegrees = (
       (
         seconds / 60
