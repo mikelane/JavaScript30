@@ -37,6 +37,15 @@
         color: var(--base);
     }
 
+    .spacing {
+        padding: var(--spacing);
+    }
+
+    .blur {
+        background: var(--base);
+        filter: blur(var(--blur));
+    }
+
     /*
       misc styles, nothing to do with CSS variables
     */
@@ -70,7 +79,6 @@
   inputs.forEach(input => input.addEventListener('change', handleUpdate));
   inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
 </script>
-
 
 </body>
 </html>
